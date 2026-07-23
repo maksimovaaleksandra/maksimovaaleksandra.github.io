@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Truman Show</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Navbar -->
+  <header class="header">
+    <a href="main.html">
+      <img class="header-logo" src="images/icons/logo.png" alt="Spotlight Logo">
+    </a>
+
+    <div class="header-search" id="headerSearchTrigger">
+      <input type="text" placeholder="Search for your interest" readonly>
+      <button class="search-btn"><img src="images/icons/search.png" alt="Search"></button>
+    </div>
+
+    <div class="header-nav-right">
+      <a href="watchlist.html" class="header-heart">
+        <img src="images/icons/header-heart.png" alt="Watchlist">
+        <span class="header-badge" id="watchlistCount" hidden>0</span>
+      </a>
+      <div class="header-profile">
+        <img src="images/icons/profile.png" alt="User Profile">
+      </div>
+    </div>
+  </header>
+
+  <main class="page-wrapper">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>The Truman Show</h1>
+        <p class="hero-details">PG, 1998, 1h 42m, Comedy/Drama</p>
+        
+        <div class="ratings">
+          <img src="images/icons/selfhst_imdb.png" alt="IMDB Logo">
+          <img src="images/icons/ratings.png" alt = "4.6 out of 5 stars">
+          <span>4.6</span>
+        </div>
+
+        <div class="buttons">
+          <a href="https://www.youtube.com/watch?v=dlnmQbPGuls" target="_blank" class="btn-trailer">
+            <img src="images/icons/iconoir_play-solid.png" alt="Play" style="width: 14px;">
+            <span>TRAILER</span>
+          </a>
+          <button class="watchlist-btn" id="btn-truman-details">
+            <img class="heart-outline" src="images/icons/heart-outline.png" alt="" />
+            <img class="heart-filled" src="images/icons/heart-filled.png" alt="" />
+            <span>WATCHLIST</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/Trailer.png" alt="The Truman Show">
+      </div>
+    </section>
+
+    <section class="details-body">
+      <div class="summary-container">
+        <h2>Summary</h2>
+        <p>
+          He doesn't know it, but everything in Truman Burbank's (Jim Carrey) life is part of a massive TV set...
+        </p>
+        <div class="tags">
+          <span>Reality Questioned</span>
+          <span>Existential Mystery</span>
+          <span>Surveillance Theme</span>
+        </div>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="images/image 2.png" alt="Movie Scene">
+        <img src="images/image 3.png" alt="Movie Scene">
+        <img src="images/image 4.png" alt="Movie Scene">
+        <img src="images/image 5.png" alt="Movie Scene">
+      </div>
+    </section>
+  </main>
+
+  <!-- Search Modal -->
+  <div class="search-modal-overlay" id="searchModalOverlay">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <h2>SEARCH</h2>
+        <button class="close-btn" id="closeSearchModal">&times;</button>
+      </div>
+      
+      <div class="search-input-box">
+        <input type="text" id="modalSearchInput" placeholder="Search for your interest..." />
+        <button id="submitSearch"><img src="images/icons/search.png" alt="Search" /></button>
+      </div>
+
+      <div id="searchResultsContainer" class="search-results-container"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
