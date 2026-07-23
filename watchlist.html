@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watchlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Navbar -->
+  <header class="header">
+    <a href="index.html">
+      <img class="header-logo" src="images/icons/logo.png" alt="Spotlight Logo">
+    </a>
+
+    <div class="header-search" id="headerSearchTrigger">
+      <input type="text" placeholder="Search for your interest" readonly>
+      <button class="search-btn"><img src="images/icons/search.png" alt="Search"></button>
+    </div>
+
+    <div class="header-nav-right">
+      <a href="watchlist.html" class="header-heart">
+        <img src="images/icons/header-heart.png" alt="Watchlist">
+        <span class="header-badge" id="watchlistCount" hidden>0</span>
+      </a>
+      <div class="header-profile">
+        <img src="images/icons/profile.png" alt="User Profile">
+      </div>
+    </div>
+  </header>
+
+  <main class="page-wrapper">
+    <div class="banner">
+      <h1 class="banner-title">WATCHLIST</h1>
+    </div>
+
+    <p id="emptyMessage" class="empty-msg">Your watchlist is currently empty.</p>
+
+    <div class="movie-grid" id="watchlistGrid">
+      <!-- "The Truman Show" -->
+    </div>
+  </main>
+
+  <!-- Search Modal -->
+  <div class="search-modal-overlay" id="searchModalOverlay">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <h2>SEARCH</h2>
+        <button class="close-btn" id="closeSearchModal">&times;</button>
+      </div>
+      
+      <div class="search-input-box">
+        <input type="text" id="modalSearchInput" placeholder="Search for your interest..." />
+        <button id="submitSearch"><img src="images/icons/search.png" alt="Search" /></button>
+      </div>
+
+      <div id="searchResultsContainer" class="search-results-container"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotlight</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header Navbar -->
+  <header class="header">
+    <a href="index.html">
+      <img class="header-logo" src="images/icons/logo.png" alt="Spotlight Logo" />
+    </a>
+
+    <div class="header-search" id="headerSearchTrigger">
+      <input type="text" placeholder="Search for your interest" readonly />
+      <button class="search-btn"><img src="images/icons/search.png" alt="Search" /></button>
+    </div>
+
+    <div class="header-nav-right">
+      <a href="watchlist.html" class="header-heart">
+        <img src="images/icons/header-heart.png" alt="Watchlist" />
+        <span class="header-badge" id="watchlistCount" hidden>0</span>
+      </a>
+      <div class="header-profile">
+        <img src="images/icons/profile.png" alt="User Profile" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="page-wrapper">
+
+    <!-- 1. FEATURED NOW SECTION -->
+    <section class="movie-section">
+      <h2 class="section-title">FEATURED NOW</h2>
+      <div class="movie-row">
+
+        <!-- Card 1 -->
+        <div class="movie-card">
+          <a href="details.html">
+            <div class="movie-card-poster">
+              <img src="images/truman-poster.png" alt="The Truman Show" />
+            </div>
+            <h3 class="movie-card-title">The Truman Show</h3>
+            <p class="movie-card-meta">1998 | 1h 42m</p>
+          </a>
+          <button class="watchlist-btn" id="btn-truman-show">
+            <img class="heart-outline" src="images/icons/heart-outline.png" alt="" />
+            <img class="heart-filled" src="images/icons/heart-filled.png" alt="" />
+            <span>WATCHLIST</span>
+          </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="movie-card">
+          <div class="movie-card-poster">
+            <img src="images/spiderman.png" alt="Spider-Man" />
+          </div>
+          <h3 class="movie-card-title">Spider-Man: No Way Home</h3>
+          <p class="movie-card-meta">2021 | 2h 28m</p>
+          <button class="watchlist-btn">
+            <img class="heart-outline" src="images/icons/heart-outline.png" alt="" />
+            <img class="heart-filled" src="images/icons/heart-filled.png" alt="" />
+            <span>WATCHLIST</span>
+          </button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="movie-card">
+          <div class="movie-card-poster">
+            <img src="images/raya.png" alt="Raya and the Last Dragon" />
+          </div>
+          <h3 class="movie-card-title">Raya and the Last Dragon</h3>
+          <p class="movie-card-meta">2021 | 1h 47m</p>
+          <button class="watchlist-btn">
+            <img class="heart-outline" src="images/icons/heart-outline.png" alt="" />
+            <img class="heart-filled" src="images/icons/heart-filled.png" alt="" />
+            <span>WATCHLIST</span>
+          </button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="movie-card">
+          <div class="movie-card-poster">
+            <img src="images/nirvanna.png" alt="Nirvanna the Band the Show the Movie" />
+          </div>
+          <h3 class="movie-card-title">Nirvanna the Band the Show the Movie</h3>
+          <p class="movie-card-meta">2026 | 1h 39m</p>
+          <button class="watchlist-btn">
+            <img class="heart-outline" src="images/icons/heart-outline.png" alt="" />
+            <img class="heart-filled" src="images/icons/heart-filled.png" alt="" />
+            <span>WATCHLIST</span>
+          </button>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="movie-card">
+          <div class="movie-card-poster">
+            <img src="images/silence.jpg" alt="The Silence of Lambs" />
+          </div>
+          <h3 class="movie-card-title">The Silence of Lambs</h3>
+          <p class="movie-card-meta">1991 | 1h 58m</p>
+          <button class="watchlist-btn">
+            <img class="heart-outline" src="images/icons/heart-outline.png" alt="" />
+            <img class="heart-filled" src="images/icons/heart-filled.png" alt="" />
+            <span>WATCHLIST</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. RECOMMENDED FOR YOU SECTION -->
+    <section class="movie-section">
+      <h2 class="section-title">RECOMMENDED FOR YOU</h2>
+      <div class="movie-row">
+
+        <!-- Card 1 -->
+        <div class="movie-card">
+          <div class="movie-card-poster">
+            <img src="images/nirvanna.png" alt="Nirvanna the Band the Show the Movie" />
+          </div>
+          <h3 class="movie-card-title">Nirvanna the Band the Show the Movie</h3>
+          <p class="movie-card-meta">2026 | 1h 39m</p>
+          <button class="watchlist-btn">
+            <img class="heart-outline" src="images/icons/heart-outline.png" alt="" />
+            <img class="heart-filled" src="images/icons/heart-filled.png" alt="" />
+            <span>WATCHLIST</span>
+          </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="movie-card">
+          <div class="movie-card-poster">
+            <img src="images/silence.jpg" alt="The Silence of Lambs" />
+          </div>
+          <h3 class="movie-card-title">The Silence of Lambs</h3>
+          <p class="movie-card-meta">1991 | 1h 58m</p>
+          <button class="watchlist-btn">
+            <img class="heart-outline" src="images/icons/heart-outline.png" alt="" />
+            <img class="heart-filled" src="images/icons/heart-filled.png" alt="" />
+            <span>WATCHLIST</span>
+          </button>
+        </div>
+
+        <!-- Card 3: -->
+        <div class="movie-card">
+          <a href="details.html">
+            <div class="movie-card-poster">
+              <img src="images/truman-poster.png" alt="The Truman Show" />
+            </div>
+            <h3 class="movie-card-title">The Truman Show</h3>
+            <p class="movie-card-meta">1998 | 1h 42m</p>
+          </a>
+          <button class="watchlist-btn" id="btn-truman-rec">
+            <img class="heart-outline" src="images/icons/heart-outline.png" alt="" />
+            <img class="heart-filled" src="images/icons/heart-filled.png" alt="" />
+            <span>WATCHLIST</span>
+          </button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="movie-card">
+          <div class="movie-card-poster">
+            <img src="images/raya.png" alt="Raya and the Last Dragon" />
+          </div>
+          <h3 class="movie-card-title">Raya and the Last Dragon</h3>
+          <p class="movie-card-meta">2021 | 1h 47m</p>
+          <button class="watchlist-btn">
+            <img class="heart-outline" src="images/icons/heart-outline.png" alt="" />
+            <img class="heart-filled" src="images/icons/heart-filled.png" alt="" />
+            <span>WATCHLIST</span>
+          </button>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="movie-card">
+          <div class="movie-card-poster">
+            <img src="images/spiderman.png" alt="Spider-Man" />
+          </div>
+          <h3 class="movie-card-title">Spider-Man: No Way Home</h3>
+          <p class="movie-card-meta">2021 | 2h 28m</p>
+          <button class="watchlist-btn">
+            <img class="heart-outline" src="images/icons/heart-outline.png" alt="" />
+            <img class="heart-filled" src="images/icons/heart-filled.png" alt="" />
+            <span>WATCHLIST</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Search Modal -->
+  <div class="search-modal-overlay" id="searchModalOverlay">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <h2>SEARCH</h2>
+        <button class="close-btn" id="closeSearchModal">&times;</button>
+      </div>
+      
+      <div class="search-input-box">
+        <input type="text" id="modalSearchInput" placeholder="Search for your interest..." />
+        <button id="submitSearch"><img src="images/icons/search.png" alt="Search" /></button>
+      </div>
+
+      <div id="searchResultsContainer" class="search-results-container"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
